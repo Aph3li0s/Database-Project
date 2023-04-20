@@ -33,15 +33,6 @@ CREATE TABLE `phong_gd` (
   PRIMARY KEY (`id_ten`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-DROP TABLE IF EXISTS schools;
-CREATE TABLE `schools` (
-  `ma_truong` varchar(20) NOT NULL,
-  `ten_truong` varchar(100) NOT NULL,
-  `dia_chi` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`ma_truong`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
 DROP TABLE IF EXISTS school_stages;
 CREATE TABLE `school_stages` (
   `ma_truong` varchar(20) NOT NULL,
@@ -59,4 +50,15 @@ CREATE TABLE `school_stages` (
   CONSTRAINT `fk_loai_truong` FOREIGN KEY (`loai_truong`) REFERENCES `loai_truong` (`id_ltrg`),
   CONSTRAINT `fk_cap_truong` FOREIGN KEY (`cap_truong`) REFERENCES `cap_truong` (`id_ct`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+DROP TABLE IF EXISTS schools;
+CREATE TABLE `schools` (
+  `ma_truong` varchar(20) NOT NULL,
+  `ten_truong` varchar(100) NOT NULL,
+  `dia_chi` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ma_truong`),
+  KEY `ma_truong` (`ma_truong`),
+  CONSTRAINT `fk_ma_truong` FOREIGN KEY (`ma_truong`) REFERENCES `school_stages` (`ma_truong`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
