@@ -1,0 +1,7 @@
+source C:/Users/ADMIN/Desktop/IT004_Project/truonghoc.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\cap_truong.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\loai_hinh.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\loai_truong.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\phong_gd.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\Schools.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/sql\School_stages.sql
