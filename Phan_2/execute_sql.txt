@@ -1,0 +1,7 @@
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_1b/CreateSchema.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\cap_truong.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\loai_hinh.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\loai_truong.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\phong_gd.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\Schools.sql
+source C:/Users/ADMIN/Desktop/IT004_Project/Phan_2/sql_command\School_stages.sql
